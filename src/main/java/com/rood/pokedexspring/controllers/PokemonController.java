@@ -21,9 +21,13 @@ private PokemonService pokemonService;
         return pokemonService.findAll();
     }
 
-    @PostMapping("/add")
-    public Pokemon create(@RequestBody Pokemon pokemon) {
-        return pokemonService.save(pokemon);
+    @PostMapping
+    public void create(@RequestBody Pokemon pokemon) {
+        pokemonService.save(pokemon);
     }
 
+    @GetMapping("/number/{number}")
+    public Pokemon getAll(@PathVariable Integer number) {
+        return pokemonService.findByNumber(number);
+    }
 }

@@ -25,12 +25,12 @@ public class Pokemon {
     private int specialAttack;
     private int specialDefense;
     private int speed;
-    @OneToOne
-    @Nullable
-    private Pokemon subForm;
+//    @OneToOne
+//    @Nullable
+//    private Pokemon subForm;
     private String description;
 
-    public Pokemon(int number, String name, String primaryType, @Nullable String secondaryType, int hp, int attack, int defense, int specialAttack, int specialDefense, int speed, @Nullable Pokemon subForm, String description) {
+    public Pokemon(int number, String name, String primaryType, @Nullable String secondaryType, int hp, int attack, int defense, int specialAttack, int specialDefense, int speed, String description) {
         this.number = number;
         this.name = name;
         this.primaryType = primaryType;
@@ -41,7 +41,7 @@ public class Pokemon {
         this.specialAttack = specialAttack;
         this.specialDefense = specialDefense;
         this.speed = speed;
-        this.subForm = subForm;
+      //  this.subForm = subForm;
         this.description = description;
     }
 
@@ -93,10 +93,10 @@ public class Pokemon {
         return speed;
     }
 
-    @Nullable
-    public Pokemon getSubForm() {
-        return subForm;
-    }
+//    @Nullable
+//    public Pokemon getSubForm() {
+//        return subForm;
+//    }
 
     public String getDescription() {
         return description;
@@ -142,9 +142,9 @@ public class Pokemon {
         this.speed = speed;
     }
 
-    public void setSubForm(@Nullable Pokemon subForm) {
-        this.subForm = subForm;
-    }
+//    public void setSubForm(@Nullable Pokemon subForm) {
+//        this.subForm = subForm;
+//    }
 
     public void setDescription(String description) {
         this.description = description;
