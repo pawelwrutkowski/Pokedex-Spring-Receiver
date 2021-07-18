@@ -4,7 +4,7 @@
 * [Technologies](#technologies)
 * [Features](#features)
 * [Setup](#setup)
-* [Project status](#project status)
+* [Project status](#project-status)
 * [Acknowledgements](#acknowledgements)
 * [Contact](*contact)
 ## General Info
