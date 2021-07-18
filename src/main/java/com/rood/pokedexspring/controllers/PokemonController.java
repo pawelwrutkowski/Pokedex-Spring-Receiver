@@ -30,4 +30,9 @@ private PokemonService pokemonService;
     public Pokemon getAll(@PathVariable Integer number) {
         return pokemonService.findByNumber(number);
     }
+
+    @GetMapping("/name/{name}")
+    public Pokemon getAll(@PathVariable String name) {
+        return pokemonService.findByName(name);
+    }
 }

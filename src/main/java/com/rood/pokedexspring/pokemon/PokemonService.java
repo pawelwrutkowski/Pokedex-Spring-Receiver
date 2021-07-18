@@ -19,6 +19,9 @@ public class PokemonService {
     public Pokemon findByNumber(Integer number) {
         return pokemonRepository.getPokemonByNumber(number);
     }
+    public Pokemon findByName(String name) {
+        return pokemonRepository.getPokemonByName(name);
+    }
 
     public Pokemon save(Pokemon pokemon) {
         return pokemonRepository.save(pokemon);
